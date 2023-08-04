@@ -1,3 +1,5 @@
+# Ignore submodules
+gateway/
 # Local .terraform directories
 **/.terraform/*
 
