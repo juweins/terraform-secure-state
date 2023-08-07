@@ -1,3 +1,5 @@
+# Configurable variables for the Terraform deployment
+
 
 # Data Source variables (Referenced by data sources)
 variable "base_rg_name" {
@@ -5,14 +7,19 @@ variable "base_rg_name" {
   description = "The name of the resource group to reference"
 }
 
-variable "spoke_vnet_storage_name" {
+variable "kv_name" {
   type = string
-  description = "The name of the virtual network to reference"
+  description = "The name of the key vault to reference"
 }
 
-variable "spoke_subnet_storage_name" {
+variable "key_name" {
   type = string
-  description = "The name of the subnet to reference"
+  description = "The name of the key to reference"
+}
+
+variable "managed_identity"{ 
+  type = string
+  description = "The name of the managed identity to reference"
 }
 
 # Deployment variables

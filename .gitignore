@@ -1,5 +1,7 @@
 # Ignore submodules
 gateway/
+provider.tf
+.terraform.lock.hcl
 # Local .terraform directories
 **/.terraform/*
 
